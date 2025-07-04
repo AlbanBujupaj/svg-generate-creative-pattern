@@ -6,6 +6,4 @@ declare module '@georgedoescode/generative-utils' {
     outMin: number,
     outMax: number
   ): number;
-
-  // Add more function declarations here if needed
 }
