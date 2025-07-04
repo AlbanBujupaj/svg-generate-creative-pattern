@@ -27,12 +27,3 @@ A generative art tool built with **React** and **svg.js** for creating beautiful
 </p>
 
 ---
-
-## 🚀 Getting Started
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/yourusername/svg-pattern-generator.git
-cd svg-pattern-generator
-# SVGPatternGeneraror
