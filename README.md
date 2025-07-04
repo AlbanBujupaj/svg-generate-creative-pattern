@@ -2,6 +2,13 @@
 
 A generative art tool built with **React** and **svg.js** for creating beautiful noise-based patterns using lines, dots, squares, and triangles. Includes full customization, SVG export, and clipboard copy functionality.
 
+## 📸 Previews
+
+<p float="left">
+  <img src="./sample-1.png" width="400" />
+  <img src="./sample-2.png" width="400" />
+</p>
+
 ---
 
 ## ✨ Features
@@ -19,11 +26,3 @@ A generative art tool built with **React** and **svg.js** for creating beautiful
 
 ---
 
-## 📸 Previews
-
-<p float="left">
-  <img src="./sample-1.png" width="400" />
-  <img src="./sample-2.png" width="400" />
-</p>
-
----
