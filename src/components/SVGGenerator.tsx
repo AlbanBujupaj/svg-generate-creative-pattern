@@ -217,7 +217,7 @@ const SVGGenerator: React.FC = () => {
               type="range"
               id="lineWidth"
               min="0.5"
-              max="6"
+              max="8"
               step="0.5"
               value={lineWidth}
               onChange={handleLineWidthChange}

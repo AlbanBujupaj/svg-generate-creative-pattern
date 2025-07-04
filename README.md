@@ -15,7 +15,12 @@ A generative art tool built with **React** and **svg.js** for creating beautiful
 
 [Live Demo](https://svg-generate-creative-pattern.vercel.app)
 
+## Example Where can be used to animate shape 
+<p>
+  <img src="./codepen.gif" width="800" />
+</p>
 
+[Example Animated Shape Generated using this tool -  Check on Codepen](https://codepen.io/abujupaj/pen/JodQwMY)
 ---
 
 ## ✨ Features
