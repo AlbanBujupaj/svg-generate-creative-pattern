@@ -16,11 +16,6 @@ A generative art tool built with **React** and **svg.js** for creating beautiful
 [Live Demo](https://svg-generate-creative-pattern.vercel.app)
 
 
-<p float="left">
-  <img src="./sample-1.png" width="400" />
-  <img src="./sample-2.png" width="400" />
-</p>
-
 ---
 
 ## ✨ Features
