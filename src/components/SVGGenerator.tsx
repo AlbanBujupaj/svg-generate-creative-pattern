@@ -102,13 +102,13 @@ const SVGGenerator: React.FC = () => {
     setRes(CELL_OPTIONS[val]);
   };
 
-  const handleVarianceChange = debounce((e: Event) => {
+  const handleVarianceChange = debounce((e: React.FormEvent<HTMLInputElement>) => {
     const input = e.target as HTMLInputElement;
     const val = parseFloat(input.value);
     setNoiseInc(map(val, 0, 1, 0.025, 0.075));
   }, 10);
 
-  const handleColorChange = debounce((e: Event) => {
+  const handleColorChange = debounce((e: React.FormEvent<HTMLInputElement>) => {
     const input = e.target as HTMLInputElement;
     const newColor = input.value;
     setColor(newColor);
