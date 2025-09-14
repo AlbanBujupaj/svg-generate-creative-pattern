@@ -1,7 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
+
 import { SVG, Svg } from "@svgdotjs/svg.js";
 import { createNoise2D } from "simplex-noise";
 import { map } from "@georgedoescode/generative-utils";
+
 import debounce from "debounce";
 import copy from "copy-to-clipboard";
 import "../styles/SVGGenerator.scss";
@@ -102,11 +105,14 @@ const SVGGenerator: React.FC = () => {
     setRes(CELL_OPTIONS[val]);
   };
 
-  const handleVarianceChange = debounce((e: React.FormEvent<HTMLInputElement>) => {
-    const input = e.target as HTMLInputElement;
-    const val = parseFloat(input.value);
-    setNoiseInc(map(val, 0, 1, 0.025, 0.075));
-  }, 10);
+  const handleVarianceChange = debounce(
+    (e: React.FormEvent<HTMLInputElement>) => {
+      const input = e.target as HTMLInputElement;
+      const val = parseFloat(input.value);
+      setNoiseInc(map(val, 0, 1, 0.025, 0.075));
+    },
+    10
+  );
 
   const handleColorChange = debounce((e: React.FormEvent<HTMLInputElement>) => {
     const input = e.target as HTMLInputElement;
@@ -158,6 +164,7 @@ const SVGGenerator: React.FC = () => {
 
   return (
     <div className="generator">
+      <Analytics />
       <svg ref={canvasRef} className="generator__canvas" viewBox="0 0 400 400">
         <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" />
       </svg>
