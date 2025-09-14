@@ -12,6 +12,7 @@
   "dependencies": {
     "@georgedoescode/generative-utils": "^2.0.1",
     "@svgdotjs/svg.js": "^3.2.4",
+    "@vercel/analytics": "^1.5.0",
     "copy-to-clipboard": "^3.3.3",
     "debounce": "^2.2.0",
     "react": "^19.1.0",
